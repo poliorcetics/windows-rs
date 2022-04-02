@@ -214,6 +214,7 @@ pub fn gen_abi_element_name(ty: &Type, gen: &Gen) -> TokenStream {
     gen_abi_element_name_impl(ty, false, gen)
 }
 
+// TODO: use Borrowed instead
 // TODO: this is only because we're trying to avoid the ManuallyDrop below - I don't think that matters so may want to scrap this once we have parity.
 fn gen_abi_element_name_impl(ty: &Type, ptr: bool, gen: &Gen) -> TokenStream {
     match ty {

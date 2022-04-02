@@ -1,5 +1,7 @@
 use super::*;
 
+// TODO: this also needs to merge with IntoParam/Param
+
 #[repr(transparent)]
 pub struct Borrowed<'a, T: Abi + 'a>(T::Abi, std::marker::PhantomData<&'a T>);
 

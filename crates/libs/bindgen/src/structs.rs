@@ -54,8 +54,9 @@ fn gen_struct_with_name(def: &TypeDef, struct_name: &str, cfg: &Cfg, gen: &Gen) 
 
         if f.is_literal() {
             quote! {}
-        } else if !gen.sys && is_union && !f.is_blittable(Some(def)) {
-            quote! { pub #name: ::core::mem::ManuallyDrop<#ty>, }
+        } else if !gen.sys && !def.is_winrt() && !f.is_blittable(Some(def)) {
+            // TODO: use Borrowed here
+            quote! { pub #name: ::windows::core::Borrowed<#ty>, }
         } else {
             quote! { pub #name: #ty, }
         }
@@ -74,7 +75,7 @@ fn gen_struct_with_name(def: &TypeDef, struct_name: &str, cfg: &Cfg, gen: &Gen) 
         #repr
         #doc
         #features
-        pub #struct_or_union #name {#(#fields)*}
+        pub #struct_or_union #name #lifetime {#(#fields)*}
     };
 
     tokens.combine(&gen_struct_constants(def, &name, &cfg, gen));
