@@ -54,10 +54,12 @@ impl From<TypeDef> for Type {
 impl Type {
     pub fn size(&self) -> usize {
         match self {
-            Self::I64 | Self::U64 | Self::F64 => 2,
-            Self::GUID => 4,
+            Self::I8 | Self::U8 => 1,
+            Self::I16 | Self::U16 => 2,
+            Self::I64 | Self::U64 | Self::F64 => 8,
+            Self::GUID => 16,
             Self::TypeDef(def) => def.size(),
-            _ => 1,
+            _ => 4,
         }
     }
 
@@ -210,6 +212,10 @@ impl Type {
 
     pub fn is_pointer(&self) -> bool {
         matches!(self, Self::ConstPtr(_) | Self::MutPtr(_))
+    }
+
+    pub fn is_unsigned(&self) -> bool {
+        matches!(self, Self::U8 | Self::U16 | Self::U32 | Self::U64 | Self::USize)
     }
 
     pub fn is_void(&self) -> bool {

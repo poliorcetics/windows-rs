@@ -1,0 +1,26 @@
+namespace test_nightly_component
+{
+    runtimeclass Class
+    {
+        Class();
+        Int32 Property;
+    }
+}
+
+namespace Microsoft
+{
+    namespace Windows
+    {
+        namespace System
+        {
+            namespace Power
+            {
+                runtimeclass PowerManager
+                {
+                    PowerManager();
+                    Int32 Property;
+                }
+            }
+        }
+    }
+}
