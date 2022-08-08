@@ -107,6 +107,41 @@ pub fn gen(gen: &Gen, def: TypeDef) -> TokenStream {
         });
     }
 
+    if is_scoped || !gen.sys {
+        let mut fields_for_value = HashMap::<_, Vec<_>>::new();
+        for (field, value) in fields.iter() {
+            fields_for_value.entry(value.as_str()).or_default().push(field.as_str());
+        }
+
+        let type_name = type_name.name;
+        let debug_details = fields_for_value.iter().map(|(value, fields)| {
+            let field_name_str = match fields[..] {
+                [] => panic!("Empty field name for value {} in type {}", value, type_name),
+                [single] => format!("{}::{}", type_name, single),
+                ref multi => {
+                    let joined = multi.join(" | ");
+                    format!("{}::[{}]", type_name, joined)
+                }
+            };
+            quote! {
+                #value => #field_name_str,
+            }
+        });
+
+        tokens.combine(&quote! {
+            #features
+            impl ::core::fmt::Debug for #ident {
+                fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
+                    let variant_id = match self.0 {
+                        #(#debug_details)*
+                        _ => #type_name,
+                    };
+                    f.debug_tuple(variant_id).field(&self.0).finish()
+                }
+            }
+        })
+    }
+
     if !gen.sys {
         tokens.combine(&quote! {
             #features
@@ -119,17 +154,10 @@ pub fn gen(gen: &Gen, def: TypeDef) -> TokenStream {
     }
 
     if !gen.sys {
-        let name = type_name.name;
         tokens.combine(&quote! {
             #features
             unsafe impl ::windows::core::Abi for #ident {
                 type Abi = Self;
-            }
-            #features
-            impl ::core::fmt::Debug for #ident {
-                fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
-                    f.debug_tuple(#name).field(&self.0).finish()
-                }
             }
         });
 
